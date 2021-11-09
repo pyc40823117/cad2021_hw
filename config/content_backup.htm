@@ -88,6 +88,12 @@ run()
 <div style="width: 100%; height: 100%;"><textarea autocomplete="off" id="kw_console"></textarea></div>
 <!-- Brython 程式執行的結果, 都以 brython_div 作為切入位置 -->
 <div id="brython_div"></div>
+<!-- 導入 gearUtils-0.9.js Cango 齒輪繪圖程式庫 -->
+<script src="https://mde.tw/cp2021/cmsimde/static/Cango-24v03-min.js"></script>
+<script src="https://mde.tw/cp2021/cmsimde/static/gearUtils-09.js"></script>
+<script src="https://mde.tw/cp2021/cmsimde/static/SVGpathUtils-6v03-min.js"></script>
+<script src="https://mde.tw/cp2021/cmsimde/static/sylvester.js"></script>
+<script src="https://mde.tw/cp2021/cmsimde/static/PrairieDraw.js"></script>
 <hr/><h1>Task</h1>
 <p>參考老師提供的程式來更改</p>
 <p></p>
@@ -392,12 +398,10 @@ end</pre>
 <p><img alt="" class="add_border" height="282" src="/images/meArm_linkage_dimension.png" width="600"/></p>
 <p>(From: <a href="/downloads/2016_ADDITIVE MANUFACTURING PROCESSES FOR FABRICATING A MINI ROBOT - COMPUTATIONAL MODELS AND EXPERIMENTAL RESULTS.pdf">2016_ADDITIVE MANUFACTURING PROCESSES FOR FABRICATING A MINI ROBOT - COMPUTATIONAL MODELS AND EXPERIMENTAL RESULTS.pdf</a>)</p>
 <p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/2pFReCfDZsU" title="YouTube video player" width="560"></iframe></p>
-<h2>CAD1 繪圖</h2>
-<p>CAD1 指各學員所分配到的第一套參數式 CAD 套件, 其中包括 Solidworks, Inventor, NX, Onshape 與 Solvespace.</p>
+<h2>CAD1 繪圖(INV)</h2>
 <p>CAD1 緣起說明與介紹</p>
 <p>Inventor是美國AutoDesk公司推出的三圍可視化實體模擬軟體，在AutoCAD平台開發的二維機械製圖和詳圖軟體AutoCAD Mechanical基礎上，加入了用於纜線和束線設計、管道設系和PCB IDF檔案輸入的專業功能模組，並加入FEA功能，可以直接Inventor中進行應力分析。<br/>Inventor提供了二維轉換到三維最簡單的路徑，且提供最佳的DWG兼容性，Invnetor提供了全面的設計工具，可用於創建完整的數字樣機，以驗證設計的外型、結構及功能。</p>
-<p>請不要直接從找到的 CAD1 套件說明複製貼上, 而是應該要看完各種參考資料後, 重新打字彙整.</p>
-<h3>CAD1 安裝配置</h3>
+<p></p><h3>CAD1 安裝配置</h3>
 <p>CAD1 指各學員所分配到的第一套參數式 CAD 套件, 其中包括 Solidworks, Inventor, NX, Onshape 與 Solvespace.</p>
 <p>CAD1 套件下載安裝與配置</p>
 <p>CAD1 下載安裝與配置流程 embedded 影片: 標題必須為「<span style="background-color: #ffff99;">NFU - MDE - cad2021 - 學號 - SW2020 下載安裝與配置</span>」且加上<span style="background-color: #ccffcc;">語音說明</span>與<span style="background-color: #ccffcc;">字幕.</span></p>
@@ -421,11 +425,10 @@ end</pre>
 <p>CAD1 零組件繪圖教學影片 (Wink)</p>
 <p>CAD1 零組件繪圖教學影片 embedded 影片: 標題必須為「<span style="background-color: #ffff99;">NFU - MDE - cad2021 - 學號 - SW2020 </span>零組件繪圖教學影片」且加上<span style="background-color: #ccffcc;">語音說明</span>與<span style="background-color: #ccffcc;">字幕.<br/></span></p>
 <p>若使用 Solidworks 2017 版, 則將 SW2020 換為 SW2017, 其他套件 INV2020 代表 AutoDesk Inventor 2020 版, 還有 Onshape 與 Solvespace 等套件名稱.</p>
-<h2>CAD2 繪圖</h2>
-<p>CAD2 指各學員所分配到的第二套參數式 CAD 套件, 其中包括 Solidworks, Inventor, NX, Onshape 與 Solvespace.</p>
+<h2>CAD2 繪圖(ONS)</h2>
 <p>CAD2 緣起說明與介紹</p>
-<p>請不要直接從找到的 CAD2 套件說明複製貼上, 而是應該要看完各種參考資料後, 重新打字彙整.</p>
-<h3>CAD2 安裝配置</h3>
+<p>Onshape的創始人Jon Hirschtick，在1993年創辦了Solidworks，在1997年時被達梭系統以3.1億美元收購，Jon Hirschtick在2011年離開Solidworks並在2012年成立公司開始創建Onshape。</p>
+<p>1.Onshape為免費軟體，不需購買授權即可使用。<br/>2.支援瀏覽器操作，並有IOS、Android軟體支援。<br/>3.可輸出圖檔供CNC、3D列印、雷射切割使用。</p><h3>CAD2 安裝配置</h3>
 <p>CAD2 指各學員所分配到的第二套參數式 CAD 套件, 其中包括 Solidworks, Inventor, NX, Onshape 與 Solvespace.</p>
 <p>CAD2 套件下載安裝與配置</p>
 <p>CAD2 套件下載安裝與配置影片 embedded 影片: 標題必須為「<span style="background-color: #ffff99;">NFU - MDE - cad2021 - 學號 - SW2020 </span>套件下載安裝與配置影片」且加上<span style="background-color: #ccffcc;">語音說明</span>與<span style="background-color: #ccffcc;">字幕.<br/></span></p>
